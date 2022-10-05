@@ -1,0 +1,302 @@
+/* Arquivo de Estilos para Site da Ótica A perder de Vista- AD1 - 2022.2 - CPW*/
+
+
+body{
+    background-color: #6480FF;
+    color: #FFFF00;
+    font-family: 'Stoke', Verdana, 'Liberation';
+    font-size: 16px;
+}
+
+a:link{color:#550099; 
+text-decoration: none;}
+
+a:visited{color:#550099;
+text-decoration: none;}
+
+a.linkdois:link{
+    color: #005599;
+}
+
+a.linkdois:visited{
+    color: #005599;
+}
+
+/* Estilos Seções*/
+
+header { 
+    display: block;
+}
+
+nav {
+    display: block;
+    margin: 2px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Stoke', Verdana, 'Liberation';
+}
+
+section{
+    display: block;
+
+}
+
+/*Estilo Elementos das Seções*/
+
+.ender {
+    text-align: right;
+    font-size: 12px;
+    line-height: 140%;
+    float: right;
+}
+
+img.imgLogo{
+    float: left;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+
+p.apres{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+/*Estilo Nav*/
+
+nav a:link {color: #0000DD;}
+nav a:visited {color:#0000DD;}
+nav a:hover {color: #DD00DD;}
+
+nav .menu {
+    float: center;
+    margin: 3px auto;}
+
+nav .botao {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #FFEE66;
+    width: 100px;
+    display: inline-block;
+}
+
+/* Estilo Página Lentes */ 
+
+.listaLentes {
+    color: #2255AA;
+    background-color: #EEDD99;
+    padding: 10px 10px 10px 50px;
+    margin: 30px 10px 10px 10px;
+    border: 2px solid #000055;
+    line-height: 200%;
+    list-style-type: upper-roman;
+}   
+
+.listLentes {
+    color: #3040BB;
+    line-height: 200%;
+    list-style-type: none;
+}
+
+img.listaLentes{
+    vertical-align: middle;
+}
+
+span.preco{
+    color: #EE0000;
+}
+
+h4 , h5.grande{
+    font-weight: normal;
+    font-weight: bolder;
+}
+
+/* Estilo página armações*/
+
+.tabOculos{
+    border-collapse: collapse;
+    background-color: #EEDD99;
+    color: #000066;
+    width: 96%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif, 'Ubuntu';
+}
+
+.tabOculos td, .tabOculos th{
+    border: 3px solid #000055;
+    padding: 6px 12px 6px 12px;
+
+}
+
+.tabOculos .titulo{
+    color:  #FFFF22;
+    background-color: #447799;
+    font-size: 24px;
+    float: center;
+    font-weight: bolder;
+}
+
+.tabOculos .linTH{
+    color: #FFFFFF;
+    background-color: #777777;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    width: 150px;
+}
+
+.tabOculos .colTH{
+    color: #FFFFFF;
+    background-color: #999999;
+    text-align: left;
+    font-weight: bold;
+    height: 200px;
+}
+
+.tabOculos .imgCel{
+   text-align: center;
+}
+
+.tabOculos .preco{
+    color: #EE0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/*Estilo página compras */ 
+
+.geral{
+    width: 580px;
+    color: #880000;
+    background-color: #EEDD99;
+    padding: 6px 6px 15px 6px;
+    margin: 10px auto;
+    border: 2px solid #000055;
+}
+
+.listaCompras{
+    width: 230px;
+    height: 250px;
+    float: right;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.botoes{
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+.fsEsq{
+    float: left;
+    display: inline;
+    margin: 0px;
+}
+
+.fsDir{
+    float: right;
+    display: inline;
+    margin: 0px;
+}
+
+.inpGrande {width: 440px; }
+
+.inpMedio {width: 80px; }
+
+.impNCC{width: 130px;}
+
+.impTelef { width: 90px;}
+
+.impEnder{width: 200px;
+height: 60px;}
+
+.numDD {
+    width: 30px;
+}
+
+.numQD{
+    width: 50px;
+}
+
+.divLinha{
+    width: 550px;
+    margin-bottom: 6px;
+    
+}
+
+
+.colPri{
+    float: left;
+    display: block;
+    width: 90px;
+}
+
+.colPriCompras{
+    float: left;
+    display: block;
+    width: 86px;
+}
+
+.colPriPag{
+    float: left;
+    display: block;
+    width: 250px;
+}
+
+.elemDir {
+    float: right;
+    display:block;
+    }
+
+.janInfoDetalhe{
+    text-align: left;
+    font-size: 18px;
+    margin-left: 15px;
+
+}
+
+.janInfo{
+    text-align: center;
+    margin: auto;
+}
+
+.imgDes{
+    width: 100px;
+    height: 43px;
+    border: 2px solid #226699;
+    padding: 12px;
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.titDes{
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+.prcDes{
+    height: 60px;
+}
+
+.celDes{
+    width: 250px;
+}
+
+.prod{
+    width: 400px;
+}

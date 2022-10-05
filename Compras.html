@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base target="_blank">
+        <meta charset="UTF-8">
+        <link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <title>
+            Questão 2 da AD1
+        </title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <a href="Principal"> </a>
+        <header>
+            <address class="ender"> 
+                Avenida Parcelada, 123 <br>
+                                        Tel: (21) 912345-5678 <br>
+                                        contato@adpv.com.br
+            </address>
+            <div class="imgLogo"> <img src="Imagens/APDVOtica_LogoTopo.png">  </div>
+            
+        </header>
+        <nav>
+            <div class="menu">
+                <span class="botao"><a href="APDVOtica.html"> INICIAL </a> </span>
+                <span class="botao"><a href="Lentes.html"> LENTES </a> </span>
+                <span class="botao"><a href="Armacoes.html"> ARMAÇÕES </a> </span>
+                <span class="botao"><a href="Compras.html"> COMPRAS </a> </span>
+
+            </div>
+        </nav>
+
+        <section>
+            <h4 class="grande"> Compras </h4>
+            <div> 
+            <form class="geral" method="post" name="Compras">
+                <fieldset >
+                    <legend> Identificação </legend>
+                   <p>
+                    <label for="inome" class="colPri"> Nome: </label>
+                    <input type="text" name="nome" id="inome" class="inpGrande" required> 
+                   </p>
+
+                   <p>
+                    <label for="iemail" class="colPri"> Email: </label>
+                    <input type="email" name="email" id="iemail" class="inpGrande" required> 
+                   </p>
+
+                   <div class="divLinha">
+                    <label for="iend" class="colPri"> Endereço: </label>
+                    <textarea name="msg" id="imsg" class="impEnder"></textarea>
+
+                   <fieldset class="fsDir">
+                        <legend> Genero </legend>
+
+                         <input type="radio" name="sexo" id="isxmas" checked> <label for="isxmas"> Mas </label>
+                         <input type="radio" name="sexo" id="isxfm"> <label for="isxfm"> Fem </label>
+                        <input type="radio" name="sexo" id="isxoutro"> <label for="isxoutro"> Outro </label>
+                     </fieldset>
+                    </div>
+
+                    <fieldset class="fsDir">
+                        <legend> Nascimento:</legend>
+                        <input type="number" name="d" id="iday" class="numDD" min="1" max="31"> /
+                        <input type="number" name="m" id="imonth" class="numDD" min="1" max="12"> /
+                        <input type="number" name="y" id="iyear" class="numQD" value="1980"> 
+                    </fieldset> 
+
+                    <div class="divLinha"> 
+                    <label for="itel" class="colPri">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" class="impTelef" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}" placeholder="(xx) xxxx-xxxx"> 
+                    <br/><br/>
+                    <label for="icel" class="colPri">Celular:</label>
+                    <input type="tel" name="cel" id="icel" class="impTelef" > 
+                </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend> Pagamento </legend>
+
+                    <label for="iprod"> Produtos: </label>
+                    <select name="produtos" id="iprod" class="prod"> 
+                        <option value="" selected> ---- </option>   
+                        <optgroup label="Lentes">
+                            <option value="L1"> Bauch & Lonb Softlens </option>
+                            <option value="L2"> Coopervision Bioinfinity </option>
+                            <option value="L3"> Johnson Acuvue Oasys </option>
+                            <option value="L4"> Johnson Acuvue 2 </option>    
+                        </optgroup> 
+                        
+                        <optgroup label="Armações Masculinas">
+                            <option value="M1"> Oakley Wingfold </option>
+                            <option value="M2"> Persol </option>
+                            <option value = "M3"> Ray-ban Round </option>
+                        </optgroup>
+
+                        <optgroup label="Armações Femininas">
+                            <option value="F1"> Kipling </option>
+                            <option value="F2"> Michael Kors </option>
+                        </optgroup>
+                    
+                    </select>
+
+                    <input type="button" value="incluir" onclick="IncluirLista(this.form.produtos);">
+                    
+                    <textarea name="lista" id="ilista" class="listaCompras" readonly></textarea>
+              
+                   <fieldset class="fsEsq">
+                        <legend> Cartão </legend>
+
+                        <fieldset class="fsEsq"> 
+                            <legend> Bandeira </legend>
+                            <input type="radio" name="card" id="ivisa" checked> <label for="ivisa"> Visa </label>
+                            <input type="radio" name="card" id="imaster"> <label for="imaster"> Master </label>
+                           <input type="radio" name="card" id="ielo"> <label for="ielo"> Elo </label>  
+                        </fieldset> 
+                       <div>
+                        <label for="ival" class="colPri"> Validade: </label>
+                        <input type="number" name="d" id="iday" class="numDD" min="1" max="12" value="1"> /
+                        <input type="number" name="m" id="imonth" class="numQD" value="2022"> 
+                        </div>
+                        <br/><br/>
+                        <div>
+                        <label for="inumcard" class="colPri"> Número: </label>
+                        <input type="text" name="numcard" id="inumcard" class="impNCC">
+                        </div>    
+                        <br/><br/>
+
+                        <label for="iparcelas" class="colPri"> Parcelas: </label>
+                        <select id="parcelas" name="parcelas">
+                            <option value="à vista"> à vista </option>
+                            <option value="2x"> 2x </option>
+                            <option value="3x"> 3x </option>
+                            <option value="4x"> 4x </option>
+                            <option value="5x"> 5x </option>
+                            <option value="6x"> 6x </option>
+                            <option value="7x"> 7x </option>
+                            <option value="8x"> 8x </option>
+                            <option value="9x"> 9x </option>
+                            <option value="10x"> 10x </option>
+                        </select>
+                        <br/><br/>
+                    </fieldset>
+
+                    <p>
+                        <label for="TxtTotal" > Valor R$ <span id="valor">  &nbsp </span>      
+                        <input type="hidden" name="TxtTotal"  id="TxtTotal" class="inpMedio" value="0" > </label> 
+                    </p>
+
+                    <p> <label for="TxtPar" > Em <span id="opcao"> &nbsp </span> de R$ <span id="parcela">  &nbsp </span>   
+                        <input type="hidden" name="TxtPar"  id="TxtPar" class="inpMedio" value="0" > </label> 
+                    </p>
+
+              
+                </fieldset>
+                
+
+                <div class="botoes"> 
+                <input type="submit" value="Enviar" >
+                <input type="reset" value="Limpar" id="Limpar">
+                 </div>       
+         </form>
+        </section>
+        <script src="principal.js"> </script>
+    </body>
+</html>
